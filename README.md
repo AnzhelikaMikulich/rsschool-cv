@@ -1,3 +1,3 @@
 # rsschool-cv
 
-[https://github.com/AnzhelikaMikulich/rsschool-cv.git]
+[https://anzhelikamikulich.github.io/rsschool-cv/cv]
