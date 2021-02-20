@@ -10,19 +10,40 @@
 
 body {
   background: linear-gradient(to left, #3525af, #9153c9) no-repeat;
+  width: 100%;
 }
-.wrapper {
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+.menu_list {
+  background-color: #fff;
+}
+.menu_list ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 18px 0;
+}
+.menu_list_li li a {
+  text-decoration: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #292b2f;
+  font-weight: bolder;
+}
+.menu_list_li li a:hover {
+  text-decoration: underline;
+  color: #9153c9;
 }
 .resume {
-  max-width: 800px;
   background: #fff;
-  margin: 25px auto;
+  margin: -1px auto;
   display: flex;
 }
 .left {
   background-color: #292b2f;
   padding: 0 20px;
-  width: 30%;
+  width: 33%;
 }
 .img_photo {
   text-align: center;
@@ -32,36 +53,179 @@ body {
   width: 200px;
   border-radius: 40px;
 }
-.contact_wrapper {
-}
 .title {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 5px;
   padding-bottom: 10px;
   color: #3525af;
+  position: relative;
+  text-align: right;
+  margin-top: 15px;
 }
-.contact {
+.title::before {
+  content: "";
+  position: absolute;
+  top: 45px;
+  right: 0;
+  width: 50px;
+  height: 3px;
+  background: #3525af;
 }
-.li_wrap {
+.contact .li_wrap {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 15px;
 }
-.icon {
+
+.contact .li_wrap .icon {
+  font-size: 20px;
+  color: #9153c9;
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
 }
-.fas {
+.contact .li_wrap .text {
+  overflow: hidden;
+  word-break: break-word;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 13px;
+  width: calc(100% - 50px);
 }
-.fa-mobile-alt {
+.contact .li_wrap .text a {
+  text-decoration: none;
+  color: #fff;
 }
-.text {
+.skills,
+.hobies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 15px;
 }
-.fab {
+.skills .li_wrap,
+.hobies .li_wrap {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 15px;
+  border-radius: 15px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  word-break: break-word;
 }
-.fa-linkedin-in {
+.hobies .li_wrap {
+  background: #292b2f;
+  border: 2px solid #fff;
 }
-.fa-envelope-square {
+.hobies .li_wrap:hover {
+  background: #fff;
 }
-.fa-map-marked-alt {
+.skills .li_wrap .icon {
+  color: #9153c9;
+}
+.hobies .li_wrap .icon {
+  color: #fff;
+}
+.skills .li_wrap .text {
+  color: #9153c9;
+  margin-top: 5px;
+}
+.hobies .li_wrap .text {
+  color: #fff;
+  margin-top: 5px;
+}
+.hobies .li_wrap:hover .text,
+.hobies .li_wrap:hover .icon {
+  color: #9153c9;
 }
 .right {
   width: 70%;
+  margin-left: -1px;
+}
+h1 {
+  text-transform: uppercase;
+  color: #3525af;
+  padding-top: 5px;
+  letter-spacing: 3px;
+}
+.name_role h3 {
+  text-transform: uppercase;
+  padding: 15px 0;
+}
+.title_name {
+  background-color: #292b2f;
+  padding: 15px 30px 50px 30px;
+  color: #fff;
+  font-weight: lighter;
+}
+.about {
+  line-height: 26px;
+}
+.edu,
+.exp {
+  margin: 40px 40px;
+}
+.edu_wrap,
+.exp_wrap {
+  margin-top: 30px;
+  font-size: 18px;
+}
+.edu_wrap .date,
+.exp_wrap .date {
+  color: #9153c9;
+}
+.right_inner .li_wrap {
+  display: flex;
+  margin: 15px 0;
+}
+.right_inner h3 {
+  font-size: 24px;
+  padding: 14px 0;
+}
+.info {
+  width: calc(100%-125px);
+  padding-left: 25px;
+  position: relative;
+}
+.date {
+  margin-right: 20px;
+  word-break: break-word;
+}
+.info_title {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #9153c9;
+  padding-bottom: 15px;
+}
+.right_inner .li_wrap .info::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #9153c9;
+  border-radius: 50%;
+}
+.right_inner .li_wrap .info::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 4px;
+  width: 2px;
+  height: 90%;
+  background-color: #9153c9;
+  border-radius: 50%;
 }
