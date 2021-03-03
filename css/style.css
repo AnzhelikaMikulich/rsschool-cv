@@ -107,13 +107,18 @@ body {
 .skills_wrapper {
   margin-top: 40px;
 }
-.skills,
-.hobies,
+.skills ul,
+.hobies ul,
 .portfolio {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 15px;
+}
+.skills ul,
+.hobies ul,
+.contact ul {
+  margin-top: 30px;
 }
 .skills .li_wrap,
 .hobies .li_wrap {
