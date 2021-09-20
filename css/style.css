@@ -343,7 +343,9 @@ h1 {
   height: 108px;
   margin: 20px;
   border-radius: 15px;
-  background: #9153c9;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -353,8 +355,16 @@ h1 {
   text-align: center;
   border: 2px solid #fff;
 }
+.portfolio .piano {
+  background-image: url(../img/Piano.png);
+}
+.portfolio .bicycales {
+  background-image: url(../img/Bysikals.png);
+}
+.portfolio .match-match {
+  background-image: url(../img/Match-match.png);
+}
 .portfolio .li_wrap:hover {
-  background: #fff;
   border: 2px solid #9153c9;
   color: #9153c9;
 }

@@ -37,3 +37,5 @@ burger.onclick = function(){
      e.preventDefault()
    }
  }
+
+ console.log('150 баллов \n ссылка на самопроверку https://youtu.be/vGCjvk3RNzw\n семантические теги  aside, footer, header, main, nav, section, используются заголовки h1-h4.')
